@@ -11,8 +11,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -80,7 +78,7 @@ public class Post {
     }
 
     public void setTagList(List<String> tagList) {
-        tags = String.join(",",tagList);
+        tags = String.join(",", tagList);
     }
 
     public List<String> getTagList() {
